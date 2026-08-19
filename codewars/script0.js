@@ -28,7 +28,7 @@ console.log(calculate(8,"m", 2));
 console.log(calculate(4,"/",0));
 console.groupEnd()
 
-function mult(n, m) {
+function mult(n, m) { // замість paperwork стоїть mult, бо писав у вскоді не орієнтуючись на вихідний код з codewars
     if (n < 0 || m < 0) {
         return 0
     } else return n * m
