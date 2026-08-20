@@ -24,8 +24,9 @@ console.groupEnd()
 console.groupEnd()
 
 function calculatePaintBoxes(area, layersCount = 1) {
+    const paintPerM2 = 0.1
     if (area < 0 || layersCount < 0 || typeof area !== "number" || typeof layersCount !== "number") return 0
-    const paint = area * layersCount * 0.1;
+    const paint = area * layersCount * paintPerM2;
     return Math.ceil(paint);
 }
 console.group("Calculate paint boxes")
