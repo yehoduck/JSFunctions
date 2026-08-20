@@ -30,8 +30,9 @@ console.groupEnd()
 
 function mult(n, m) { // замість paperwork стоїть mult, бо писав у вскоді не орієнтуючись на вихідний код з codewars
     if (n < 0 || m < 0) {
-        return 0
-    } else return n * m
+        return 0;
+    } 
+    return n * m;
 }
 console.group("Multiplications")
 console.log(mult(4, 7))
